@@ -75,12 +75,13 @@
 
 <body>
   <header>
-    <h1 class="logo">Please Login</h1>
+    <h1 class="logo">Please Sign</h1>
     <div class="description">
-     <form action="/login" method="post">
+     <form action="/sign" method="post">
             <p>Username: <input type="text" name="username" /></p>
             <p>Password: <input type="password" name="password" /></p>
-            <input type="submit" value="Login" />
+            <p>{{.Massage}}</p>
+            <input type="submit" value="Sign" />
       </form>
     </div>
   </header>

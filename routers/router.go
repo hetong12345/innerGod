@@ -9,7 +9,8 @@ import (
 func init() {
 	beego.Router("/", &controllers.MainController{})
 	beego.Router("/login", &controllers.LoginController{})
-	beego.Post("/post", func(ctx *context.Context) {
+	beego.Router("/sign", &controllers.SignController{})
+	beego.Post("/tmp", func(ctx *context.Context) {
 
 	})
 }
